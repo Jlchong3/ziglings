@@ -9,8 +9,7 @@
 // "TooSmall". Please add it where needed!
 const MyNumberError = error{
     TooBig,
-    ???,
-    TooFour,
+    TooSmall,
 };
 
 const std = @import("std");
@@ -26,8 +25,7 @@ pub fn main() void {
         if (number_error == MyNumberError.TooBig) {
             std.debug.print(">4. ", .{});
         }
-        if (???) {
-            std.debug.print("<4. ", .{});
+        if (number_error == MyNumberError.TooSmall) {
         }
         if (number_error == MyNumberError.TooFour) {
             std.debug.print("=4. ", .{});

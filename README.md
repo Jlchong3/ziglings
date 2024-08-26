@@ -1,3 +1,7 @@
+
+This repository contains my solutions to the exercises of ziglings, designed for learning the language.
+
+>>>>>>> a8c0ac7 (Solution for all current available problems)
 # Ziglings
 
 Welcome to Ziglings! This project contains a series of tiny
@@ -127,12 +131,6 @@ It can be handy to check just a single exercise:
 
 ```
 zig build -Dn=19
-```
-
-Or run all exercises, starting from a specific one:
-
-```
-zig build -Ds=27
 ```
 
 Or let Ziglings pick an exercise for you:

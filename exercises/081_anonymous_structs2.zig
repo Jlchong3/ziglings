@@ -38,8 +38,7 @@ pub fn main() void {
 
 // Please complete this function which prints an anonymous struct
 // representing a circle.
-fn printCircle(???) void {
-    print("x:{} y:{} radius:{}\n", .{
+fn printCircle(circle: anytype) void {
         circle.center_x,
         circle.center_y,
         circle.radius,

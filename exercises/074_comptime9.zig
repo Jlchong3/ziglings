@@ -39,8 +39,7 @@ const llamas = makeLlamas(llama_count);
 
 // And here's the function. Note that the return value type
 // depends on one of the input arguments!
-fn makeLlamas(count: usize) [count]u8 {
-    var temp: [count]u8 = undefined;
+fn makeLlamas(comptime count: usize) [count]u8 {
     var i = 0;
 
     // Note that this does NOT need to be an inline 'while'.
